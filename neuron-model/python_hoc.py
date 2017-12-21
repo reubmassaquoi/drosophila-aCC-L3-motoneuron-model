@@ -26,7 +26,7 @@ h.finitialize()
 clamp = h.IClamp(h.electrode(1)) 
 clamp.delay = 50  #delay for 50 ms
 clamp.dur= 500  #for the duration of 500 ms
-clamp.amp = 0.05  #with an amplitude of 0.05
+clamp.amp = 0.05  #with an amplitude of 0.05 nA
 
 #run simulation
 h.run()

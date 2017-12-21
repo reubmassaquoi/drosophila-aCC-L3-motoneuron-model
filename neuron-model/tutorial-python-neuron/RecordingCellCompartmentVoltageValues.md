@@ -43,7 +43,7 @@ There's just one more thing we can do before running our simulation. We can atta
 clamp = h.IClamp(h.electrode(1)) 
 clamp.delay = 50  #delay for 50 ms
 clamp.dur= 500  #for the duration of 500 ms
-clamp.amp = 0.05  #with an amplitude of 0.05
+clamp.amp = 0.05  #with an amplitude of 0.05 nA
 ```
 
 
@@ -54,7 +54,8 @@ Now that the preliminary steps have been taken, we can now run our simulation wi
 h.finitialize()  #Must be called before run().
 h.run()  #Run simulation.
 ```
-Once our simulation ends wecan view our values in a software like matlab. But first, we have to write our data to a text file called `voltage_recording.txt` In order to do that, using the following lines:
+
+Once our simulation ends we can view our values in Matlab. But first, we have to write our data to a text file called `voltage_recording.txt` In order to do that, use the following lines:
 
 
 ```python
