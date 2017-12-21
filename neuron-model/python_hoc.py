@@ -22,6 +22,12 @@ h('vec.record(&soma[0].v(.5))')
 #must call before run
 h.finitialize()
 
+#A current clamp to stimulate the model
+clamp = h.IClamp(h.electrode(1)) 
+clamp.delay = 50  #delay for 50 ms
+clamp.dur= 500  #for the duration of 500 ms
+clamp.amp = 0.05  #with an amplitude of 0.05
+
 #run simulation
 h.run()
 
